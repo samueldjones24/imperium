@@ -3,3 +3,22 @@
   padding: 25rem 0;
   margin-top: -20vh;
 }
+
+.section-features {
+  padding: 20rem 0;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-light, 0.7),
+      rgba($color-primary, 0.7)
+    ),
+    url(../img/gym-3-large.jpg);
+  background-size: cover;
+  // transform: skewY(-6deg);
+  margin-top: -14rem;
+
+  clip-path: polygon(0 20%, 100% 0, 100% 80%, 0% 100%);
+
+  // & > * {
+  //   transform: skewY(6deg);
+  // }
+}
