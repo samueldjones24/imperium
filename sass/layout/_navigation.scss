@@ -44,10 +44,9 @@
   &__list {
     list-style: none;
     text-align: center;
-    position: absolute;
     width: 100%;
 
-    @include centerverhor;
+    @include absoluteCenter;
   }
 
   &__item {
