@@ -26,8 +26,8 @@
       &-1 {
         background-image: linear-gradient(
           to right bottom,
-          $color-secondary-light,
-          $color-secondary
+          $color-primary-light,
+          $color-primary
         );
       }
 
@@ -42,8 +42,8 @@
       &-3 {
         background-image: linear-gradient(
           to right bottom,
-          $color-tertiary-light,
-          $color-tertiary
+          $color-primary-light,
+          $color-primary
         );
       }
     }
@@ -69,10 +69,10 @@
     &--1 {
       background-image: linear-gradient(
           to right bottom,
-          $color-secondary-light,
-          $color-secondary
+          $color-primary-light,
+          $color-primary
         ),
-        url(../img/nat-5.jpg);
+        url(../img/gym-5.jpg);
     }
 
     &--2 {
@@ -81,16 +81,16 @@
           $color-primary-light,
           $color-primary
         ),
-        url(../img/nat-6.jpg);
+        url(../img/gym-6.jpg);
     }
 
     &--3 {
       background-image: linear-gradient(
           to right bottom,
-          $color-tertiary-light,
-          $color-tertiary
+          $color-primary-light,
+          $color-primary
         ),
-        url(../img/nat-7.jpg);
+        url(../img/gym-7.jpg);
     }
   }
 
@@ -114,8 +114,8 @@
     &--1 {
       background-image: linear-gradient(
         to right bottom,
-        rgba($color-secondary-light, 0.85),
-        rgba($color-secondary, 0.85)
+        rgba($color-primary-light, 0.85),
+        rgba($color-primary, 0.85)
       );
     }
 
@@ -130,8 +130,8 @@
     &--3 {
       background-image: linear-gradient(
         to right bottom,
-        rgba($color-tertiary-light, 0.85),
-        rgba($color-tertiary, 0.85)
+        rgba($color-primary-light, 0.85),
+        rgba($color-primary, 0.85)
       );
     }
   }
@@ -171,7 +171,7 @@
     text-align: center;
   }
 
-  &__price-only {
+  &__price-text {
     font-size: 1.4rem;
     text-transform: uppercase;
   }
