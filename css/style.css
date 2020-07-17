@@ -120,7 +120,7 @@ body {
   margin-top: -14rem;
   clip-path: polygon(0 20%, 100% 0, 100% 80%, 0% 100%); }
 
-.section-tours {
+.section-pricing {
   background-color: #f7f7f7;
   padding: 25rem 0 15rem 0;
   margin-top: -20vh; }
@@ -129,19 +129,9 @@ body {
   padding: 15rem 0;
   position: relative; }
 
-.section-book {
+.section-contact {
   padding: 15rem 0;
   background-image: linear-gradient(to right bottom, #adcfa7, #606e6a); }
-
-.book {
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/nat-10.jpg);
-  background-size: cover;
-  border-radius: 4px;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
-  height: 50rem; }
-  .book__form {
-    width: 50%;
-    padding: 6rem; }
 
 .btn, .btn:link, .btn:visited {
   text-decoration: none;
@@ -330,6 +320,17 @@ body {
   .card__price-value {
     font-size: 6rem;
     font-weight: 100; }
+
+.booksy-text {
+  display: inline-grid;
+  color: white;
+  padding: 2rem; }
+
+.booksy-logo {
+  width: 100px;
+  height: auto;
+  margin-left: 10px;
+  filter: brightness(0) invert(1); }
 
 .story {
   width: 75%;
@@ -534,6 +535,33 @@ body {
     line-height: 1; }
   .popup__close:hover {
     color: #606e6a; }
+
+.contact {
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/gym-10.jpg);
+  background-size: cover;
+  border-radius: 4px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  background-position: center;
+  height: 50rem; }
+  .contact__details {
+    width: 50%;
+    padding: 6rem; }
+  .contact__list {
+    list-style: none; }
+  .contact__item {
+    display: block; }
+    .contact__item:not(:last-child) {
+      margin-bottom: 1rem; }
+  .contact__icon {
+    font-size: 3rem;
+    font-weight: 900;
+    padding: 2rem;
+    background-image: linear-gradient(to right, #adcfa7, #606e6a);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; }
+  .contact__text {
+    font-size: 1.5rem; }
 
 .header {
   height: 95vh;
