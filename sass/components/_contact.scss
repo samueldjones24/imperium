@@ -11,7 +11,7 @@
   box-shadow: $box-shadow-medium;
   background-position: center;
 
-  height: 50rem;
+  height: 55rem;
 
   &__details {
     width: 50%;
@@ -44,7 +44,25 @@
     color: transparent;
   }
 
-  &__text {
+  &__detail {
     font-size: 1.5rem;
+    position: relative;
+  }
+
+  &__text {
+    position: absolute;
+    top: 7px;
+    left: 75px;
+  }
+
+  &__email {
+    color: $color-grey-dark;
+    position: absolute;
+    top: 7px;
+    left: 75px;
+
+    &:hover {
+      color: $color-primary-light;
+    }
   }
 }

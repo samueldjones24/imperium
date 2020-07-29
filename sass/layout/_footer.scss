@@ -1,12 +1,12 @@
 .footer {
-  background-color: $color-grey-dark-3;
-  padding: 10rem 0;
+  background-color: $color-grey-light;
+  padding: 8rem 0;
   font-size: 1.4rem;
-  color: $color-grey-light;
+  color: $color-grey-dark;
 
   &__logo-box {
     text-align: center;
-    margin-bottom: 8rem;
+    margin-bottom: 4rem;
   }
 
   &__logo {
@@ -35,8 +35,8 @@
   &__link {
     &:link,
     &:visited {
-      color: $color-grey-light;
-      background-color: $color-grey-dark-3;
+      color: $color-grey-dark;
+      background-color: $color-grey-light;
       text-decoration: none;
       display: inline-block;
     }

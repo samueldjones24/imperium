@@ -11,12 +11,16 @@
 
     <link rel="stylesheet" href="css/icon-font.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="shortcut icon" type="image/png" href="img/imperium_logo.png" />
 
     <title>Imperium | CrossFit Gym</title>
   </head>
   <body>
-    <div class="navigation">
+    <!-- <div class="navigation">
       <input type="checkbox" class="navigation__checkbox" id="nav-toggle" />
 
       <label for="nav-toggle" class="navigation__button">
@@ -34,23 +38,20 @@
             <a href="#pricing" class="navigation__link">Pricing</a>
           </li>
           <li class="navigation__item">
-            <a href="#contact" class="navigation__link">Contact Us</a>
+            <a href="#contact" class="navigation__link">Contact</a>
           </li>
         </ul>
       </nav>
-    </div>
+    </div> -->
 
     <header class="header">
-      <!-- <div class="header__logo-box">
-        <img src="./img/logo-white.png" alt="Logo" class="header__logo" />
-      </div> -->
       <div class="header__text-box">
         <h1 class="heading-primary">
           <span class="heading-primary--main">
             Imperium
           </span>
           <span class="heading-primary--sub">
-            CrossFit Gym & Classes
+            Functional Fitness Gym
           </span>
         </h1>
 
@@ -59,36 +60,38 @@
     </header>
 
     <main>
-      <section class="section-about" id="about">
+      <section class="section-about">
         <div class="u-center-text u-margin-bottom-big">
-          <h2 class="heading-secondary">
-            Level up with a former Royal Marine
+          <h2 class="heading-secondary" id="about">
+            Discover your inner power
           </h2>
         </div>
 
         <div class="row">
           <div class="col-1-of-2">
             <h3 class="heading-tertiary u-margin-bottom-small">
-              Open-plan gym with top quality equipment
+              Welcome to Imperium
             </h3>
             <p class="paragraph">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              est qui ratione ducimus omnis necessitatibus. Accusantium rerum
-              molestiae voluptates natus eum sit tempore magnam? Adipisci minima
-              debitis libero!
+              Hi there! My name is Josh Jones and welcome to my gym, Imperium.
+              After 5 years at the Royal Marines and competing at CrossFit
+              tournaments, I wanted to open my own gym space that focuses on
+              physical and mental strength. I'd love you to join us for a class
+              or even a session on the weights. Either way, I'd be happy to
+              answer any questions, share some tips or even do a bit of
+              spotting!
             </p>
             <h3 class="heading-tertiary u-margin-bottom-small">
-              Classes and 1-to-1 sessions
+              Open-plan gym with high quality equipment
             </h3>
             <p class="paragraph">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Cupiditate eligendi aut nisi, error, sit commodi consequuntur est
-              delectus illum perspiciatis architecto mollitia vero odio
-              praesentium eum voluptates obcaecati eaque.
+              With a climbing section at the back, workout space with general
+              cardio equipment (e.g. bikes, SkiErgs) at the front and a separate
+              weights/strongman room, the gym offers plenty of variety so you
+              can work on any part of your training program with us. Other
+              facilities include male/female changing rooms with showers and
+              on-site toilets.
             </p>
-            <!-- <a href="#" class="btn-text">
-              Learn more &rarr;
-            </a> -->
           </div>
           <div class="col-1-of-2">
             <div class="composition">
@@ -199,18 +202,10 @@
                 <div class="card__cta">
                   <div class="card__price-box">
                     <p class="card__price-text">Only</p>
-                    <p class="card__price-value">£15</p>
-                    <p class="card__price-text">per session</p>
+                    <p class="card__price-value">£5</p>
+                    <p class="card__price-text">per class</p>
                   </div>
-                  <a href="#book-now" class="btn btn--white">Book now</a>
-                  <div class="booksy-text">
-                    via
-                    <img
-                      src="./img/booksy-logo.svg"
-                      alt="Booksy logo"
-                      class="booksy-logo"
-                    />
-                  </div>
+                  <a href="#contact" class="btn btn--white">Book now</a>
                 </div>
               </div>
             </div>
@@ -247,15 +242,7 @@
                     <p class="card__price-value">£25</p>
                     <p class="card__price-text">per session</p>
                   </div>
-                  <a href="#book-now" class="btn btn--white">Book now</a>
-                  <div class="booksy-text">
-                    via
-                    <img
-                      src="./img/booksy-logo.svg"
-                      alt="Booksy logo"
-                      class="booksy-logo"
-                    />
-                  </div>
+                  <div class="btn--disabled">Coming soon</div>
                 </div>
               </div>
             </div>
@@ -292,26 +279,12 @@
                     <p class="card__price-value">£20</p>
                     <p class="card__price-text">per month</p>
                   </div>
-                  <a href="#book-now" class="btn btn--white">Book now</a>
-                  <div class="booksy-text">
-                    via
-                    <img
-                      src="./img/booksy-logo.svg"
-                      alt="Booksy logo"
-                      class="booksy-logo"
-                    />
-                  </div>
+                  <div class="btn--disabled">Coming soon</div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
-        <!-- <div class="u-center-text u-margin-top-bigger">
-          <a href="#" class="btn btn--green">
-            
-          </a>
-        </div> -->
       </section>
 
       <!--
@@ -395,40 +368,58 @@
         <div class="row">
           <div class="contact">
             <div class="contact__details">
-              <h2 class="heading-secondary u-margin-bottom-medium">
+              <h2 class="heading-secondary u-margin-bottom-small">
                 Contact Us
               </h2>
+              <p class="contact__detail u-margin-bottom-medium">
+                Please note that we only take bookings by phone, email or via
+                our social media accounts, so please get in touch with us if you
+                would like to book a class.
+              </p>
               <ul class="contact__list">
                 <li class="contact__item">
-                  <div class="contact__text">
+                  <div class="contact__detail">
                     <i class="contact__icon icon-basic-geolocalize-01"></i>
-                    <span>
-                      1 Amman Rd, Ammanford SA18 1SW
-                    </span>
+                    <span class="contact__text"
+                      >1 Amman Rd, Ammanford SA18 1SW</span
+                    >
                   </div>
                 </li>
                 <li class="contact__item">
-                  <div class="contact__text">
+                  <div class="contact__detail">
                     <i class="contact__icon icon-basic-smartphone"></i>
-                    <span>
-                      012345 678 901
-                    </span>
+                    <span class="contact__text">012345 678 901</span>
                   </div>
                 </li>
                 <li class="contact__item">
-                  <div class="contact__text">
+                  <div class="contact__detail">
                     <i class="contact__icon icon-basic-mail"></i>
-                    <span>
-                      info@imperium.com
-                    </span>
+                    <a
+                      href="mailto:imperiumffwales@gmail.com"
+                      class="contact__email"
+                    >
+                      imperiumffwales@gmail.com
+                    </a>
                   </div>
                 </li>
-                <li class="footer__item">
-                  <div class="contact__text">
-                    <i class="contact__icon icon-basic-share"></i>
-                    <span>
-                      1 Amman Rd, Ammanford SA18 1SW
-                    </span>
+                <li class="contact__item u-margin-top-medium">
+                  <div class="social-btns">
+                    <a
+                      class="social-btn facebook"
+                      href="https://www.facebook.com/ImperiumFFW/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><i class="fa fa-facebook"></i></a
+                    ><a class="social-btn twitter" href="#"
+                      ><i class="fa fa-twitter"></i
+                    ></a>
+                    <a
+                      class="social-btn instagram"
+                      href="https://www.instagram.com/imperiumffwales/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><i class="fa fa-instagram"></i
+                    ></a>
                   </div>
                 </li>
               </ul>
@@ -500,28 +491,22 @@
     </main>
 
     <footer class="footer">
-      <!-- <div class="footer__logo-box">
-        <img src="img/logo-green-2x.png" alt="Full logo" class="footer__logo" />
-      </div> -->
+      <div class="footer__logo-box">
+        <img src="img/imperium_logo.png" alt="Full logo" class="footer__logo" />
+      </div>
       <div class="row">
         <div class="col-1-of-2">
           <div class="footer__navigation">
             <ul class="footer__list">
               <li class="footer__item">
-                <a href="#about" class="footer__link">Company</a>
+                <a href="#about" class="footer__link">About</a>
               </li>
               <li class="footer__item">
-                <a href="#contact" class="footer__link">Contact Us</a>
+                <a href="#contact" class="footer__link">Contact</a>
               </li>
               <li class="footer__item">
                 <a href="#pricing" class="footer__link">Pricing</a>
               </li>
-              <!-- <li class="footer__item">
-                <a href="#" class="footer__link">Privacy</a>
-              </li>
-              <li class="footer__item">
-                <a href="#" class="footer__link">Terms</a>
-              </li> -->
             </ul>
           </div>
         </div>
@@ -531,8 +516,8 @@
             <a href="https://twitter.com/samueldjones" class="footer__link"
               >Samuel Jones</a
             >
-            via an Advanced CSS and SASS course. Credit for the course and
-            website design belongs to
+            with support from an online Advanced HTML/CSS course. Credit for the
+            course and website design belongs to
             <a href="https://twitter.com/jonasschmedtman" class="footer__link"
               >Jonas Schmedtmann</a
             >.
@@ -571,75 +556,5 @@
         </div>
       </div>
     </div>
-
-    <!--
-      <section class="grid-test">
-        <div class="row">
-          <div class="col-1-of-2">
-            Col 1 of 2
-          </div>
-          <div class="col-1-of-2">
-            Col 1 of 2
-          </div>
-        </div>
-  
-        <div class="row">
-          <div class="col-1-of-3">
-            Col 1 of 3
-          </div>
-          <div class="col-1-of-3">
-            Col 1 of 3
-          </div>
-          <div class="col-1-of-3">
-            Col 1 of 3
-          </div>
-        </div>
-  
-        <div class="row">
-          <div class="col-1-of-3">
-            Col 1 of 3
-          </div>
-          <div class="col-2-of-3">
-            Col 2 of 3
-          </div>
-        </div>
-  
-        <div class="row">
-          <div class="col-1-of-4">
-            Col 1 of 4
-          </div>
-          <div class="col-1-of-4">
-            Col 1 of 4
-          </div>
-          <div class="col-1-of-4">
-            Col 1 of 4
-          </div>
-          <div class="col-1-of-4">
-            Col 1 of 4
-          </div>
-        </div>
-  
-        <div class="row">
-          <div class="col-1-of-4">
-            Col 1 of 4
-          </div>
-          <div class="col-1-of-4">
-            Col 1 of 4
-          </div>
-          <div class="col-2-of-4">
-            Col 2 of 4
-          </div>
-        </div>
-  
-        <div class="row">
-          <div class="col-1-of-4">
-            Col 1 of 4
-          </div>
-          <div class="col-3-of-4">
-            Col 3 of 4
-          </div>
-        </div>
-      </section>
-    -->
   </body>
 </html>
