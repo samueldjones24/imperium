@@ -1,7 +1,11 @@
 .section-about {
   background-color: $color-grey-light;
-  padding: 25rem 0;
+  padding: 15rem;
   margin-top: -20vh;
+
+  @include respond(tab-port) {
+    padding: 25rem 0 50rem 0;
+  }
 }
 
 .section-features {
@@ -13,25 +17,36 @@
     ),
     url(../img/gym-3-large.jpg);
   background-size: cover;
-  // transform: skewY(-6deg);
-  margin-top: -14rem;
+  margin-top: -20rem;
 
+  -webkit-clip-path: polygon(0 20%, 100% 0, 100% 80%, 0% 100%);
   clip-path: polygon(0 20%, 100% 0, 100% 80%, 0% 100%);
 
-  // & > * {
-  //   transform: skewY(6deg);
-  // }
+  @include respond(tab-port) {
+    -webkit-clip-path: polygon(0 5%, 100% 0, 100% 95%, 0% 100%);
+    clip-path: polygon(0 5%, 100% 0, 100% 95%, 0% 100%);
+
+    padding: 10rem 0;
+  }
 }
 
 .section-pricing {
   background-color: $color-grey-light;
   padding: 25rem 0 15rem 0;
   margin-top: -20vh;
+
+  @include respond(tab-port) {
+    padding: 20rem 0 10rem 0;
+  }
 }
 
 .section-stories {
   padding: 15rem 0;
   position: relative;
+
+  @include respond(tab-port) {
+    padding: 10rem 0;
+  }
 }
 
 .section-contact {

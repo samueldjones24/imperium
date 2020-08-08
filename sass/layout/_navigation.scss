@@ -9,6 +9,11 @@
     display: inline-flex;
     top: 4rem;
     right: 4rem;
+
+    @include respond(tab-port) {
+      top: 2rem;
+      right: 4rem;
+    }
   }
 
   &__item {
