@@ -181,6 +181,13 @@
     font-weight: 100;
   }
 
+  &__promotion {
+    position: absolute;
+    bottom: 2rem;
+    left: 4rem;
+    color: $color-grey-light;
+  }
+
   @include respond(tab-port) {
     height: auto;
     border-radius: $default-border-radius;
