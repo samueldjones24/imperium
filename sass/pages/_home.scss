@@ -51,9 +51,5 @@
 
 .section-contact {
   padding: 15rem 0;
-  background-image: linear-gradient(
-    to right bottom,
-    $color-primary-light,
-    $color-primary
-  );
+  background-color: $color-primary-light;
 }

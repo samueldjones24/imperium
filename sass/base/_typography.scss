@@ -49,14 +49,6 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
-  background-image: linear-gradient(
-    to right,
-    $color-primary-light,
-    $color-primary
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
   transition: all 0.2s;
   letter-spacing: 0.2rem;
 
@@ -70,7 +62,7 @@ body {
 }
 
 .heading-tertiary {
-  font-size: $default-font-size;
+  font-size: 2rem;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -81,4 +73,9 @@ body {
   &:not(:last-child) {
     margin-bottom: 3rem;
   }
+}
+
+.underline {
+  -webkit-text-decoration: $color-primary-light double underline;
+  text-decoration: $color-primary-light double underline;
 }
