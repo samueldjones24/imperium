@@ -171,9 +171,14 @@
     bottom: 2rem;
     left: 4rem;
     color: $color-grey-light;
+
+    @include respond(tab-port) {
+      bottom: 0;
+      left: 0;
+    }
   }
 
-  @include respond(tab-port) {
+  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
     height: auto;
     border-radius: $default-border-radius;
     background-color: $color-white;

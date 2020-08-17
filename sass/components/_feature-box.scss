@@ -23,7 +23,6 @@
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    font-display: auto;
 
     @include respond(tab-port) {
       padding: 0;

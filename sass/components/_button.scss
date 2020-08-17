@@ -41,7 +41,7 @@
 
   &--white {
     background-color: $color-white;
-    color: $color-grey-dark;
+    color: $color-grey-dark-3;
 
     &::after {
       background-color: $color-white;
@@ -92,7 +92,7 @@
     transition: all 0.2s;
     position: relative;
     font-size: $default-font-size;
-    opacity: 0.3;
+    opacity: 0.7;
     background-color: $color-primary;
     color: $color-white;
     cursor: default;
