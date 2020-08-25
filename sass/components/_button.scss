@@ -118,11 +118,20 @@
 .social-btns .social-btn:before {
   top: 90%;
   left: -110%;
+
+  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
+    top: -10%;
+    left: -10%;
+  }
 }
 
 .social-btns .social-btn .fa {
   -webkit-transform: scale(0.8);
   transform: scale(0.8);
+
+  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
+    transform: scale(1);
+  }
 }
 
 .social-btns .social-btn.facebook:before {
@@ -131,6 +140,9 @@
 
 .social-btns .social-btn.facebook .fa {
   color: #3b5998;
+  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
+    color: $color-white;
+  }
 }
 
 .social-btns .social-btn.twitter:before {
@@ -139,6 +151,9 @@
 
 .social-btns .social-btn.twitter .fa {
   color: #3cf;
+  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
+    color: $color-white;
+  }
 }
 
 .social-btns .social-btn.instagram:before {
@@ -164,6 +179,10 @@
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+
+  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
+    color: $color-white;
+  }
 }
 
 .social-btns .social-btn:focus:before,
