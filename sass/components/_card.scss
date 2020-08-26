@@ -67,15 +67,15 @@
     border-top-right-radius: $default-border-radius;
 
     &--1 {
-      background-image: url(../img/gym-5.jpg);
+      background-image: url(../../public/img/gym-5.jpg);
     }
 
     &--2 {
-      background-image: url(../img/gym-6.jpg);
+      background-image: url(../../public/img/gym-6.jpg);
     }
 
     &--3 {
-      background-image: url(../img/gym-7.jpg);
+      background-image: url(../../public/img/gym-7.jpg);
     }
   }
 
@@ -171,11 +171,7 @@
     bottom: 2rem;
     left: 4rem;
     color: $color-grey-light;
-
-    @include respond(tab-port) {
-      bottom: 0;
-      left: 0;
-    }
+    padding: 2rem 5rem 0 5rem;
   }
 
   @media only screen and (max-width: 56.25em), only screen and (hover: none) {
@@ -188,6 +184,7 @@
       height: auto;
       position: relative;
       box-shadow: none;
+      padding: 1.5rem;
 
       &--back {
         transform: rotateY(0);
@@ -224,6 +221,12 @@
 
     &__price-value {
       font-size: 4rem;
+    }
+
+    &__promotion {
+      bottom: 0;
+      left: 0;
+      padding: 1rem;
     }
   }
 }

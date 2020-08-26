@@ -5,7 +5,7 @@
       rgba($color-primary-light, 0.5),
       rgba($color-header-primary, 0.5)
     ),
-    url(../img/hero-small.jpeg);
+    url(../../public/img/hero.jpeg);
   background-size: cover;
   background-position: top;
   position: relative;
@@ -24,7 +24,7 @@
         rgba($color-primary-light, 0.5),
         rgba($color-header-primary, 0.5)
       ),
-      url(../img/hero.jpeg);
+      url(../../public/img/hero.jpeg);
   }
 
   @include respond(tab-port) {
