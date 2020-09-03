@@ -5,7 +5,7 @@
       rgba($color-primary-light, 0.5),
       rgba($color-header-primary, 0.5)
     ),
-    url(../public/img/hero.jpeg);
+    url(https://imperium-assets.s3.eu-west-2.amazonaws.com/hero-small.jpeg);
   background-size: cover;
   background-position: top;
   position: relative;
@@ -24,7 +24,7 @@
         rgba($color-primary-light, 0.5),
         rgba($color-header-primary, 0.5)
       ),
-      url(../public/img/hero.jpeg);
+      url(https://imperium-assets.s3.eu-west-2.amazonaws.com/hero-small.jpeg);
   }
 
   @include respond(tab-port) {
