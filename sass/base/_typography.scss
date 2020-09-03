@@ -78,3 +78,12 @@ body {
     margin-bottom: 3rem;
   }
 }
+
+.covid-paragraph {
+  display: inline-block;
+  font-size: 1.3rem;
+  background-color: lighten($color-primary-light, 40%);
+  padding: 1rem;
+  border-radius: 4px;
+  width: 75%;
+}

@@ -11,12 +11,12 @@
 
     @include respond(tab-port) {
       top: 2rem;
-      right: 2rem;
+      right: 5rem;
     }
 
     @include respond(phone) {
       top: 2rem;
-      right: 1rem;
+      right: 5rem;
     }
   }
 
@@ -43,6 +43,18 @@
       background-size: 230%;
       transition: all 0.4s;
       border-radius: $default-border-radius;
+
+      @include respond(phone) {
+        font-size: 1.5rem;
+        padding: 1rem 1rem;
+      }
+
+      // for iPhone 5/SE
+      @media only screen and (max-width: 22em) {
+        // 400px
+        font-size: 1.5rem;
+        padding: 0;
+      }
     }
 
     &:hover,

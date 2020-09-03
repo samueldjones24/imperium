@@ -59,10 +59,10 @@ html {
       font-size: 75%; } }
   @media only screen and (max-width: 75em) {
     html {
-      font-size: 56.25%; } }
+      font-size: 62.5%; } }
   @media only screen and (max-width: 56.25em) {
     html {
-      font-size: 50%; } }
+      font-size: 56.25%; } }
 
 body {
   box-sizing: border-box;
@@ -137,6 +137,14 @@ body {
   font-size: 1.6rem; }
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
+
+.covid-paragraph {
+  display: inline-block;
+  font-size: 1.3rem;
+  background-color: #fbdedd;
+  padding: 1rem;
+  border-radius: 4px;
+  width: 75%; }
 
 .u-center-text {
   text-align: center !important; }
@@ -755,11 +763,11 @@ body {
   @media only screen and (max-width: 56.25em) {
     .navigation__list {
       top: 2rem;
-      right: 2rem; } }
+      right: 5rem; } }
   @media only screen and (max-width: 37.5em) {
     .navigation__list {
       top: 2rem;
-      right: 1rem; } }
+      right: 5rem; } }
 
 .navigation__item {
   margin: 1rem;
@@ -776,6 +784,14 @@ body {
   background-size: 230%;
   transition: all 0.4s;
   border-radius: 4px; }
+  @media only screen and (max-width: 37.5em) {
+    .navigation__link:link, .navigation__link:visited {
+      font-size: 1.5rem;
+      padding: 1rem 1rem; } }
+  @media only screen and (max-width: 22em) {
+    .navigation__link:link, .navigation__link:visited {
+      font-size: 1.5rem;
+      padding: 0; } }
 
 .navigation__link:hover, .navigation__link:active {
   background-position: 100%;

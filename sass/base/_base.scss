@@ -16,11 +16,11 @@ html {
   }
 
   @include respond(tab-land) {
-    font-size: 56.25%; // 1rem = 9px
+    font-size: 62.5%; // 1rem = 10px
   }
 
   @include respond(tab-port) {
-    font-size: 50%; // 1rem = 8px
+    font-size: 56.25%; // 1rem = 9px
   }
 }
 
