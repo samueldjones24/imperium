@@ -59,10 +59,10 @@ html {
       font-size: 75%; } }
   @media only screen and (max-width: 75em) {
     html {
-      font-size: 56.25%; } }
+      font-size: 62.5%; } }
   @media only screen and (max-width: 56.25em) {
     html {
-      font-size: 50%; } }
+      font-size: 56.25%; } }
 
 body {
   box-sizing: border-box;
@@ -137,6 +137,14 @@ body {
   font-size: 1.6rem; }
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
+
+.covid-paragraph {
+  display: inline-block;
+  font-size: 1.3rem;
+  background-color: #fbdedd;
+  padding: 1rem;
+  border-radius: 4px;
+  width: 75%; }
 
 .u-center-text {
   text-align: center !important; }
@@ -217,7 +225,7 @@ body {
   opacity: 0.7;
   border: none;
   cursor: pointer; }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (max-width: 75em) {
     .btn, .btn:link, .btn:visited {
       opacity: 1; } }
 
@@ -521,11 +529,8 @@ body {
     position: absolute;
     bottom: 2rem;
     left: 4rem;
-    color: #f7f7f7; }
-    @media only screen and (max-width: 56.25em) {
-      .card__promotion {
-        bottom: 0;
-        left: 0; } }
+    color: #f7f7f7;
+    padding: 2rem 5rem 0 5rem; }
   @media only screen and (max-width: 56.25em), only screen and (hover: none) {
     .card {
       height: auto;
@@ -535,7 +540,8 @@ body {
       .card__side {
         height: auto;
         position: relative;
-        box-shadow: none; }
+        box-shadow: none;
+        padding: 1.5rem; }
         .card__side--back {
           transform: rotateY(0);
           -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
@@ -557,7 +563,11 @@ body {
         font-size: 1.4rem;
         text-transform: uppercase; }
       .card__price-value {
-        font-size: 4rem; } }
+        font-size: 4rem; }
+      .card__promotion {
+        bottom: 0;
+        left: 0;
+        padding: 1rem; } }
 
 .bg-video {
   position: absolute;
@@ -613,17 +623,29 @@ body {
   .contact__detail {
     font-size: 1.5rem;
     position: relative; }
-  .contact__text {
-    position: absolute;
-    top: 7px;
-    left: 75px; }
-  .contact__email {
-    color: #333;
-    position: absolute;
-    top: 7px;
-    left: 75px; }
-    .contact__email:hover {
-      color: #e52d27; }
+    .contact__detail--text {
+      position: absolute;
+      top: 7px;
+      left: 75px; }
+    .contact__detail--email {
+      color: #333;
+      position: absolute;
+      top: 7px;
+      left: 75px; }
+      .contact__detail--email:hover {
+        color: #e52d27; }
+    .contact__detail--phone {
+      color: #333;
+      position: absolute;
+      top: 7px;
+      left: 75px; }
+      @media only screen and (max-width: 37.5em) {
+        .contact__detail--phone {
+          margin-top: 1rem; } }
+      @media only screen and (min-width: 56.25rem) {
+        .contact__detail--phone {
+          text-decoration: none;
+          pointer-events: none; } }
 
 .header {
   height: 85vh;
@@ -741,11 +763,11 @@ body {
   @media only screen and (max-width: 56.25em) {
     .navigation__list {
       top: 2rem;
-      right: 2rem; } }
+      right: 5rem; } }
   @media only screen and (max-width: 37.5em) {
     .navigation__list {
       top: 2rem;
-      right: 1rem; } }
+      right: 5rem; } }
 
 .navigation__item {
   margin: 1rem;
@@ -762,6 +784,14 @@ body {
   background-size: 230%;
   transition: all 0.4s;
   border-radius: 4px; }
+  @media only screen and (max-width: 37.5em) {
+    .navigation__link:link, .navigation__link:visited {
+      font-size: 1.5rem;
+      padding: 1rem 1rem; } }
+  @media only screen and (max-width: 22em) {
+    .navigation__link:link, .navigation__link:visited {
+      font-size: 1.5rem;
+      padding: 0; } }
 
 .navigation__link:hover, .navigation__link:active {
   background-position: 100%;
