@@ -5,7 +5,6 @@
   text-align: center;
   border-radius: $default-border-radius;
   box-shadow: $box-shadow-medium;
-  transition: transform 0.3s;
 
   @include respond(tab-port) {
     padding: 2rem;
@@ -27,9 +26,5 @@
     @include respond(tab-port) {
       padding: 0;
     }
-  }
-
-  &:hover {
-    transform: translateY(-1.5rem) scale(1.03);
   }
 }
