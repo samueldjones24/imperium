@@ -48,6 +48,15 @@
     }
   }
 
+  &--green {
+    background-color: $color-primary;
+    color: $color-white;
+
+    &::after {
+      background-color: $color-primary;
+    }
+  }
+
   &--animated {
     animation: moveInBottom 2s ease-in-out 1s;
     animation-fill-mode: backwards;
@@ -202,7 +211,6 @@
   height: 40px;
   margin: auto;
   font-size: 0;
-  text-align: center;
 }
 
 .social-btns .social-btn {

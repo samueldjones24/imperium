@@ -2,10 +2,10 @@
   background-image: linear-gradient(
       90deg,
       rgba($color-white, 0.9) 0%,
-      rgba($color-white, 0.9) 50%,
+      rgba($color-white, 0.9) 35%,
       transparent 50%
     ),
-    url(https://imperium-assets.s3.eu-west-2.amazonaws.com/gym-10.jpg);
+    url("../../public//img/dog-3.jpg");
   background-size: cover; // or 100%
   border-radius: $default-border-radius;
   box-shadow: $box-shadow-medium;
@@ -18,7 +18,7 @@
         rgba($color-white, 0.9) 65%,
         transparent 65%
       ),
-      url(https://imperium-assets.s3.eu-west-2.amazonaws.com/gym-10-small.jpg);
+      url("../../public//img/dog-3.jpg");
   }
 
   @include respond(tab-port) {
@@ -27,11 +27,11 @@
         rgba($color-white, 0.9) 0%,
         rgba($color-white, 0.9) 100%
       ),
-      url(https://imperium-assets.s3.eu-west-2.amazonaws.com/gym-10-small.jpg);
+      url("../../public//img/dog-3.jpg");
   }
 
   &__details {
-    width: 50%;
+    width: 40%;
     padding: 6rem;
 
     @include respond(tab-land) {

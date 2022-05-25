@@ -1,21 +1,27 @@
 .header {
   height: 85vh;
-  background: linear-gradient(
-    to right bottom,
-    rgba($color-primary, 0.7),
-    rgba($color-primary-light, 0.9)
-  );
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary, 0.5),
+      rgba($color-primary-light, 0.5)
+    ),
+    url(../../public/img/dog-6.jpg);
+  background-size: cover;
+  background-position: center;
   position: relative;
   border-radius: 4px;
 
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
     (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
     (min-width: 125em) {
-    background: linear-gradient(
-      to right bottom,
-      rgba($color-primary, 0.7),
-      rgba($color-primary-light, 0.9)
-    );
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary, 0.1),
+        rgba($color-primary-light, 0.3)
+      ),
+      url(../../public/img/dog-6.jpg);
+    background-size: cover;
+    background-position: center;
   }
 
   &__text-box {
