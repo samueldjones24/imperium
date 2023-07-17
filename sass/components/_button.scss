@@ -147,35 +147,24 @@
 }
 
 .social-btns {
-  height: 40px;
-  margin: auto;
-  font-size: 0;
-  text-align: center;
+  height: 50px;
+  width: 75%;
+  background-color: $color-primary;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 0.5rem 1rem;
+  justify-content: space-evenly;
 }
 
 .social-btns .social-btn {
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  margin: 0 10px;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-  opacity: 0.99;
-  color: $color-primary;
-}
+  display: flex;
+  color: $color-white;
+  padding: 5px;
+  text-decoration: none;
 
-.social-btns .social-btn:before {
-  content: "";
-  width: 120%;
-  height: 120%;
-  position: absolute;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-
-.social-btns .social-btn .fa {
-  font-size: 3rem;
-  vertical-align: middle;
+  &:hover {
+    transform: scale(1.2);
+  }
 }
