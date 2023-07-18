@@ -11,15 +11,6 @@
   box-shadow: $box-shadow-medium;
   background-position: center;
 
-  // @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
-  //   background-image: linear-gradient(
-  //       to right bottom,
-  //       rgba($color-primary-light, 0.5),
-  //       rgba($color-primary, 0.5)
-  //     ),
-  //     url(https://imperium-assets.s3.eu-west-2.amazonaws.com/gym-10.jpg);
-  // }
-
   @include respond(tab-land) {
     background-image: linear-gradient(
         105deg,
@@ -67,9 +58,6 @@
   }
 
   &__icon {
-    font-size: 3rem;
-    font-weight: 900;
-    padding: 2rem;
     background-image: linear-gradient(
       to right,
       $color-primary-light,
@@ -78,23 +66,23 @@
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    height: 50px;
+    width: 50px;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
   }
 
   &__detail {
     font-size: 1.5rem;
-    position: relative;
-
-    &--text {
-      position: absolute;
-      top: 7px;
-      left: 75px;
-    }
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
 
     &--email {
       color: $color-grey-dark-3;
-      position: absolute;
-      top: 7px;
-      left: 75px;
 
       &:hover {
         color: $color-primary-light;
@@ -103,9 +91,6 @@
 
     &--phone {
       color: $color-grey-dark-3;
-      position: absolute;
-      top: 7px;
-      left: 75px;
 
       @include respond(phone) {
         margin-top: 1rem;

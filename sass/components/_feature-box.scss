@@ -6,14 +6,15 @@
   border-radius: $default-border-radius;
   box-shadow: $box-shadow-medium;
   transition: transform 0.3s;
+  height: 35rem;
 
   @include respond(tab-port) {
     padding: 2rem;
+    height: auto;
   }
 
   &__icon {
-    font-size: 6rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
     padding: 1rem;
     background-image: linear-gradient(
       to right,
