@@ -165,6 +165,9 @@ body {
 .u-margin-top-bigger {
   margin-top: 10rem !important; }
 
+.u-margin-left-small {
+  margin-left: 1rem !important; }
+
 .section-about {
   background-color: #f7f7f7;
   padding: 20rem 0;
@@ -326,6 +329,9 @@ body {
   gap: 2rem;
   padding: 0.5rem 1rem;
   justify-content: space-evenly; }
+  @media only screen and (max-width: 56.25em) {
+    .social-btns {
+      width: 100%; } }
 
 .social-btns .social-btn {
   display: flex;

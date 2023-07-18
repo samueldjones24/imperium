@@ -156,6 +156,10 @@
   gap: 2rem;
   padding: 0.5rem 1rem;
   justify-content: space-evenly;
+
+  @media only screen and (max-width: 56.25em) {
+    width: 100%;
+  }
 }
 
 .social-btns .social-btn {
