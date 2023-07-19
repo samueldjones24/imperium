@@ -51,6 +51,7 @@
 
   &__item {
     display: block;
+    word-wrap: anywhere;
 
     &:not(:last-child) {
       margin-bottom: 1rem;
